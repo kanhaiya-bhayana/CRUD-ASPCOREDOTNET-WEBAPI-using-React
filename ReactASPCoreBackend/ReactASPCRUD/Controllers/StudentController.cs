@@ -7,7 +7,7 @@ namespace ReactASPCRUD.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class StudentController : ControllerBase
+    public class StudentController : Controller
     {
         private readonly StudentDbContext _studentDbContext;
         public StudentController(StudentDbContext studentDbContext)

@@ -1,0 +1,8 @@
+create table employeeDetails (
+	
+	id int PRIMARY KEY IDENTITY,
+	name Varchar(30) NOT NULL,
+	email Varchar(30) NOT NULL,
+	password Varchar(30) NOT NULL,
+	mobile Varchar(10) NOT NULL
+);

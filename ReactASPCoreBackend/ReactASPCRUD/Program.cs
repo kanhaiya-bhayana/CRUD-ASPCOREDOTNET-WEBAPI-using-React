@@ -10,8 +10,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<StudentDbContext>(options =>
-options.UseSqlServer(builder.Configuration.GetConnectionString("StudentDbContext")));
+builder.Services.AddDbContext<EmployeeDbContext>(options =>
+options.UseSqlServer(builder.Configuration.GetConnectionString("EmployeeDbContext")));
 
 var app = builder.Build();
 app.UseCors(policy => policy.AllowAnyHeader()
